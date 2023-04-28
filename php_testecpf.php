@@ -25,6 +25,7 @@
 
 			$resultado = '';
 			$cpf = '';
+			$cpf2= '';
 
 			if( isset( $_POST[ 'validar']))
 			{
@@ -44,7 +45,7 @@
 		<h1>Valida CPF<br></h1>
 
 		<form action="php_testecpf.php" method="POST" style="border: 0px">
-			<p>CPF: <input type="text" maxlength="14" name="cpf" style="width: 100px" value="<?php echo $cpf; ?>" onkeypress="formatar_mascara(this,'###.###.###-##')"></p>
+			<p>CPF: <input type="text" maxlength="14" name="cpf" style="width: 100px" value="<?php echo $cpf; ?>" onkeypress="formatar_mascara( this, '###.###.###-##')" autofocus></p>
 			<p><input type="submit" name="validar" value="Validar"></p>
 		</form>
 
