@@ -45,7 +45,7 @@
 		<h1>Valida CPF<br></h1>
 
 		<form action="php_testecpf.php" method="POST" style="border: 0px">
-			<p>CPF: <input type="text" maxlength="14" name="cpf" style="width: 100px" value="<?php echo $cpf; ?>" onkeypress="formatar_mascara( this, '###.###.###-##')" autofocus></p>
+			<p>CPF: <input type="text" maxlength="14" name="cpf" style="width: 100px" value="<?php echo htmlspecialchars( $cpf, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" onkeypress="formatar_mascara( this, '###.###.###-##')" autofocus></p>
 			<p><input type="submit" name="validar" value="Validar"></p>
 		</form>
 
