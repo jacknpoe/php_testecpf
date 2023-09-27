@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
-		<title>Calcula a fórmula de Bhaskara</title>
+		<title>Validador de CPF</title>
  		<link rel="stylesheet" href="php_testecpf.css"/>
 		<link rel="icon" type="image/png" href="php_testecpf.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-					<script type="text/javascript">
+		<script type="text/javascript">
 			function formatar_mascara(src, mascara){
 			    let tamanho_src = src.value.length
 			    let tamanho_mascara = mascara.length
