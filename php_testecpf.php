@@ -18,6 +18,7 @@
 			        temp = src.value.substring(i, i+1)
 			        if((!isNaN(Number(temp))) && temp != "-") valor += temp
 			    }
+			    tamanho_src = valor.length
 			    while(true){
 			        if(tamanho_src == atual_src || tamanho_mascara == atual_mascara){
 			            break
