@@ -6,7 +6,7 @@
 		<link rel="icon" type="image/png" href="php_testecpf.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<script type="text/javascript">
+					<script type="text/javascript">
 			function formatar_mascara(src, mascara){
 			    let tamanho_src = src.value.length
 			    let tamanho_mascara = mascara.length
@@ -31,6 +31,9 @@
 			        }
 			        atual_mascara ++
 			    }
+			    let final = acumulador.substring(acumulador.length-1)
+			    if(isNaN(Number(final)) || final == "-")
+			        acumulador = acumulador.substring(0, acumulador.length-1)
 			    src.value = acumulador
 			}
 		</script>
