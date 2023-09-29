@@ -31,9 +31,9 @@
 			        }
 			        atual_mascara ++
 			    }
-			    let final = acumulador.substring(acumulador.length-1)
-			    if(isNaN(Number(final)) || final == "-")
-			        acumulador = acumulador.substring(0, acumulador.length-1)
+			    // let final = acumulador.substring(acumulador.length-1)
+			    // if(isNaN(Number(final)) || final == "-")
+			    //     acumulador = acumulador.substring(0, acumulador.length-1)
 			    src.value = acumulador
 			}
 		</script>
